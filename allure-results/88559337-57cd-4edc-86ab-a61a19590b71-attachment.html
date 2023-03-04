@@ -1,0 +1,124 @@
+<html lang="en"><head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Blog Post</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap validator JS and CSS -->
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+          
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="#" crossorigin="anonymous">
+        
+        <link type="text/css" rel="stylesheet" href="../stylesheets/stylesheet.css">
+        <script src="../javascripts/index.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar bg-primary">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Blog Post</a>
+                </div>
+                
+            </div>
+        </nav>
+
+        <main class="container">
+            <div class="row">
+                <div class="column col-xs-12">
+                     
+                        <script>
+                            $(function() {
+                                if('error' == 'success') {
+                                    $('#alert_success').addClass('alert-success');
+                                    $('#alert_success').fadeOut(5000);
+                                }
+                                else if('error' == 'error') {
+                                    $('#alert_error').addClass('alert-danger');
+                                    $('#alert_error').fadeOut(5000);
+                                }
+                            });
+                        </script>
+                        <div id="alert_error" class="alert alert-dismissible text-center alert-danger" role="alert" style="opacity: 0.0204713;">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button> You must be logged in first!
+                        </div>
+                     
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-sm-offset-3">
+    <div class="panel panel-default">
+        <div class="panel-heading">Sign In</div>
+            <div class="panel-body">
+                <form id="login-form" action="/login" method="post" role="form" style="display: block;" novalidate="novalidate" class="bv-form"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+                    <div class="form-group has-feedback">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Username..." title="username" data-bv-field="username">
+                        </div><i class="form-control-feedback bv-no-label bv-icon-input-group" data-bv-icon-for="username" style="display: none;"></i>
+                    <small class="help-block" data-bv-validator="notEmpty" data-bv-for="username" data-bv-result="NOT_VALIDATED" style="display: none;">The username is required and cannot be empty</small></div>
+                    <div class="form-group has-feedback">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password..." title="password" data-bv-field="password">
+                        </div><i class="form-control-feedback bv-no-label bv-icon-input-group" data-bv-icon-for="password" style="display: none;"></i>
+                    <small class="help-block" data-bv-validator="notEmpty" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The Password is required and cannot be empty</small></div>
+                    <div class="form-group text-center">
+                        <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                        <label for="remember"> Remember Me</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3">
+                                <input type="submit" name="login" id="login" tabindex="4" class="form-control btn btn-login" value="Log In">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="text-center">
+                                    <a href="/forgot" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        <div>
+        <div class="panel-footer">
+            <a href="/register">Or Sign Up</a>
+        </div>
+    </div>
+</div>
+
+
+        </div></main>
+        <footer>
+            <div class="footer-copyright text-center py-3">
+                <hr>
+                <p>© Ashis Raj | <a href="">Privacy Policy</a> | <a href="">Terms of Use</a></p>
+            </div>
+        </footer>
+    
+
+</body></html>
